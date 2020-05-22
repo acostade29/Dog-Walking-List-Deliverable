@@ -1,14 +1,13 @@
 <%- include('../partials/base')  %> 
 
 
-<h1> this is the dog index page</h1>
+<h1> Dog Walking List</h1>
 
 
-<% dogs.forEach(function(i) { %>
+<% dogs.forEach(function(i,idx) { %>
     <h3 id='DogName'> Dog Name:</h3>
-    <p><%= i.name %></p>
-    <h4>Owner Name:</h4>
-    <p><%= i.owner %></p>
+    <a href='/dogs/<%= idx %>'><%= i.name %></a>
+   
     
 <% }) %>
 
