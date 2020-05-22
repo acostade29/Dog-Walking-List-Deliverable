@@ -1,10 +1,15 @@
+<%- include('../partials/base')  %> 
+
+
 <h1> this is the dog index page</h1>
 
 
 <% dogs.forEach(function(i) { %>
-    <h3>Dog Name:</h3>
+    <h3 id='DogName'> Dog Name:</h3>
     <p><%= i.name %></p>
     <h4>Owner Name:</h4>
     <p><%= i.owner %></p>
     
 <% }) %>
+
+<%- include('../partials/footer') %> 
