@@ -2,6 +2,12 @@
 <h2> Dog Details</h2>
 <h3> Dog Name: <%= dog.name %></h3>
 <h4> Dog Owner: <%= dog.owner %></h3>
+  
+<form action="dogs/edit/<%= idx %>" method="GET">
+
+    <button type='submit'>Edit Dog</button>
+    
+</form>
 <a href="/dogs">Back to Dog Walking List</a>
 
-<%- include('../partials/base')  %> 
+<%- include('../partials/footer')  %> 

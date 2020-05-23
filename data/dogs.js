@@ -8,7 +8,17 @@ const dogs = [
 module.exports = {
     getAll,
     getOne,
-    deleteOne
+    deleteOne,
+    add,
+    update
+}
+
+function update(idx, dog) {
+    dogs[idx] = dog;
+}
+
+function add(dog) {
+    dogs.push(dog);
 }
 
 function getAll() {
@@ -18,7 +28,7 @@ function getAll() {
 function getOne(idx) {
     return dogs[idx];
 }
- 
+
 function deleteOne(idx) {
     dogs.splice(idx, 1);
 }

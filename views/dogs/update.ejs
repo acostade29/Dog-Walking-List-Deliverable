@@ -1,0 +1,7 @@
+<h1>Update dog:</h1>
+<form action="/dogs/edit/<%= idx %>?_method=PUT" method="POST">
+    Title: <input type="text" name='name' value="<%= dog.name %>">
+    Author: <input type="text" name='owner' value="<%= dog.owner %>">
+    <button type='submit'>Update dog</button>
+</form>
+  

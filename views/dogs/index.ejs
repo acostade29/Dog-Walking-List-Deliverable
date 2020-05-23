@@ -2,13 +2,20 @@
 
 
 <h1> Dog Walking List</h1>
-
+<a href="/dogs/new">Add a new dog</a>
 
 <% dogs.forEach(function(i,idx) { %>
+    
     <h3 id='DogName'> Dog Name:</h3>
+   <form action="/dogs/<%= idx %>?_method=DELETE"method="POST">
+       <button type='submit'>x</button>
+   </form>
+    
     <a href='/dogs/<%= idx %>'><%= i.name %></a>
    
     
 <% }) %>
 
-<%- include('../partials/footer') %> 
+
+
+<%- include('../partials/footer') %>
